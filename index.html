@@ -25,7 +25,7 @@
 				<img src="./icons/hamburger.svg" alt="Hamburger icon" />
 			</nav>
 			<section class="header-content">
-				<h2>Take control over the music played in the bar.</h2>
+				<h1>Take control over the music played in the bar.</h1>
 				<button>Create an account</button>
 				<button class="ghost">Log in</button>
 				<img
@@ -36,18 +36,124 @@
 			</section>
 		</header>
 		<main class="container">
-			<h1>Hear your favourite song in the bar</h1>
-			<form class="song-form" action="">
-				<input type="text" placeholder="Title of your desired song..." />
-				<a class="input-submit-btn">
-					<img class="send-icon" src="./icons/send.svg" alt="Send icon" />
-					<img
-						class="shape-background"
-						src="./icons/submit-btn-shape.svg"
-						alt="Send icon"
-					/>
-				</a>
-			</form>
+			<section class="play-a-song">
+				<h1>Hear your favourite song in the bar</h1>
+				<form class="song-form" action="">
+					<input type="text" placeholder="Title of your desired song..." />
+					<button class="input-submit-btn">
+						<img class="send-icon" src="./icons/send.svg" alt="Send icon" />
+						<img
+							class="shape-background"
+							src="./icons/submit-btn-shape.svg"
+							alt="Send icon"
+						/>
+					</button>
+				</form>
+			</section>
+			<section class="next-song">
+				<h1>What next?</h1>
+				<h2>A song with the highest number of hearts will be played next.</h2>
+				<h3 class="small-heading">Voting ends in 00:02:25</h3>
+				<section class="card next-song-card">
+					<section class="card-info">
+						<picture>
+							<source
+								media="(min-width: 750px)"
+								srcset="./images/album-cover@2x.png"
+							/>
+							<img
+								class="album-image"
+								src="./images/album-cover.png"
+								alt="Cover of some album"
+							/>
+						</picture>
+						<section class="song-info">
+							<h1>Semaphore</h1>
+							<h3 class="song-author">Requin Chagrin</h3>
+							<p class="small">Requested by: John Doe</p>
+						</section>
+					</section>
+					<section class="likes">
+						<img src="./icons/heart.svg" alt="Heart icon" />
+						<p class="number-of-likes">10</p>
+					</section>
+				</section>
+				<section class="card next-song-card">
+					<section class="card-info">
+						<picture>
+							<source
+								media="(min-width: 750px)"
+								srcset="./images/album-cover@2x.png"
+							/>
+							<img
+								class="album-image"
+								src="./images/album-cover.png"
+								alt="Cover of some album"
+							/>
+						</picture>
+						<section class="song-info">
+							<h1>Semaphore</h1>
+							<h3 class="song-author">Requin Chagrin</h3>
+							<p class="small">Requested by: John Doe</p>
+						</section>
+					</section>
+					<section class="likes">
+						<img src="./icons/heart.svg" alt="Heart icon" />
+						<p class="number-of-likes">10</p>
+					</section>
+				</section>
+				<section class="card next-song-card">
+					<section class="card-info">
+						<picture>
+							<source
+								media="(min-width: 750px)"
+								srcset="./images/album-cover@2x.png"
+							/>
+							<img
+								class="album-image"
+								src="./images/album-cover.png"
+								alt="Cover of some album"
+							/>
+						</picture>
+						<section class="song-info">
+							<h1>Semaphore</h1>
+							<h3 class="song-author">Requin Chagrin</h3>
+							<p class="small">Requested by: John Doe</p>
+						</section>
+					</section>
+					<section class="likes">
+						<img src="./icons/heart.svg" alt="Heart icon" />
+						<p class="number-of-likes">10</p>
+					</section>
+				</section>
+			</section>
 		</main>
+		<section class="card current-song">
+			<h2>Playing in the bar now...</h2>
+			<section class="card-info">
+				<picture>
+					<source
+						media="(min-width: 750px)"
+						srcset="./images/album-cover@2x.png"
+					/>
+					<img
+						class="album-image"
+						src="./images/album-cover.png"
+						alt="Cover of some album"
+					/>
+				</picture>
+				<section class="song-info">
+					<h1>Heat waves</h1>
+					<h3 class="song-author">Requin Chagrin</h3>
+					<progress class="amount-progress" value="20" max="100">
+						Song progress
+					</progress>
+					<section class="song-stamps">
+						<p>1:17</p>
+						<p>3:37</p>
+					</section>
+				</section>
+			</section>
+		</section>
 	</body>
 </html>

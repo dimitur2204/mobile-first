@@ -3,6 +3,7 @@
 	--dark-blue: #27125f;
 	--main-red: #a70e6a;
 	--white: #fff;
+	--border-radius: 15px;
 }
 
 body {
@@ -13,10 +14,29 @@ body {
 }
 
 .container {
-	padding: 35px;
+	padding: 28px;
 }
 
-input {
+h1 {
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+h2 {
+	margin-bottom: 18px;
+	font-size: 18px;
+}
+
+h3 {
+	margin-bottom: 16px;
+}
+
+main > section {
+	margin-bottom: 45px;
+}
+
+/* Input styles if needed */
+/* input {
 	border: none;
 	outline: none;
 	color: var(--white);
@@ -29,15 +49,44 @@ input {
 
 input::placeholder {
 	color: var(--white);
+} */
+
+.small-heading {
+	font-size: 13px;
 }
+
+p.small {
+	margin: 0;
+	font-size: 9px;
+}
+
 .card {
+	background-color: transparent;
+	border-radius: var(--border-radius);
 	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
+	padding: 14px 20px;
+}
+
+.card h1 {
+	margin: 0;
+	margin-bottom: 2px;
+	font-size: 16px;
+}
+
+.card h3 {
+	margin: 0;
+	margin-bottom: 1px;
+	font-size: 12px;
+}
+
+.card p {
+	margin: 0;
 }
 
 button {
 	border: none;
 	outline: none;
-	border-radius: 15px;
+	border-radius: var(--border-radius);
 	padding: 13px 37px;
 	min-width: 196px;
 	display: flex;

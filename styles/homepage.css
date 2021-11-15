@@ -1,8 +1,9 @@
+/* Header styles */
 header {
 	background-image: url("../images/hero-image-mobile.jpg");
 	background-size: cover;
 	background-position-x: center;
-	height: 669px;
+	height: 68vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -33,26 +34,142 @@ nav {
 	margin-bottom: 54px;
 }
 
+/* Request a song styles */
+.song-form {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	border: none;
+	outline: none;
+	color: var(--white);
+	border-radius: 15px;
+	padding-left: 14px;
+	background-color: transparent;
+	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
+}
+
+.song-form input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: var(--white);
+}
+
+.song-form input::placeholder {
+	color: var(--white);
+}
+
 .input-submit-btn {
-	position: absolute;
-	top: 2%;
-	right: -5px;
 	min-width: 72px;
+	height: 49px;
+	padding: 0;
+	background: none;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 .shape-background {
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: -3px;
 }
+
 .send-icon {
 	z-index: 1;
-	position: absolute;
-	top: 15px;
 }
-.song-form {
+
+/* Next songs styles */
+.next-song-card {
 	display: flex;
+	justify-content: space-between;
+}
+
+.next-song-card:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.card-info {
+	display: flex;
+}
+
+.album-image {
+	object-fit: cover;
+	width: 48px;
+	height: 43px;
+}
+
+.song-info {
+	margin-left: 5px;
+}
+
+.song-author {
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: normal;
+}
+
+.song-info p.small {
+	white-space: nowrap;
+}
+
+.likes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+p.number-of-likes {
+	margin-top: 5px;
+}
+
+/* Current song sticky styles */
+.current-song {
+	position: sticky;
+	backdrop-filter: blur(30px) brightness(12) opacity(0.3);
+	left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.current-song .album-image {
+	width: 103px;
+	height: 64px;
+}
+.current-song .song-info {
+	margin-left: 5px;
+	width: 100%;
+}
+.current-song h2 {
+	margin-bottom: 6px;
+}
+progress {
+	width: 100%;
+	height: 2px;
+	background-color: var(--white);
+	color: var(--white);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+progress::-webkit-progress-bar {
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.2);
+	opacity: 1;
+}
+progress::-webkit-progress-value {
+	height: 3px;
+	background-color: var(--white);
 	position: relative;
+	bottom: 2px;
+	opacity: 1;
+}
+.song-stamps {
+	display: flex;
+	justify-content: space-between;
+}
+.song-stamps p {
+	margin: 0;
+	margin-top: 1px;
+	font-size: 10px;
+	font-weight: lighter;
 }
