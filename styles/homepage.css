@@ -32,3 +32,27 @@ nav {
 .header-content button.ghost {
 	margin-bottom: 54px;
 }
+
+.input-submit-btn {
+	position: absolute;
+	top: 2%;
+	right: -5px;
+	min-width: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.shape-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.send-icon {
+	z-index: 1;
+	position: absolute;
+	top: 15px;
+}
+.song-form {
+	display: flex;
+	position: relative;
+}

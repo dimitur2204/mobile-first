@@ -1,5 +1,6 @@
 :root {
 	--main-blue: #4b25cc;
+	--dark-blue: #27125f;
 	--main-red: #a70e6a;
 	--white: #fff;
 }
@@ -16,6 +17,21 @@ body {
 }
 
 input {
+	border: none;
+	outline: none;
+	color: var(--white);
+	border-radius: 15px;
+	padding: 16px 17px;
+	background-color: transparent;
+	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
+	width: 100%;
+}
+
+input::placeholder {
+	color: var(--white);
+}
+.card {
+	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
 }
 
 button {
