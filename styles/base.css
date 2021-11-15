@@ -1,0 +1,38 @@
+:root {
+	--main-blue: #4b25cc;
+	--main-red: #a70e6a;
+	--white: #fff;
+}
+
+body {
+	background: url("../images/background.svg");
+	color: var(--white);
+	/* TODO: Need to include the Helvetica Neue Font  */
+	font-family: "Roboto", sans-serif;
+}
+
+.container {
+	padding: 35px;
+}
+
+input {
+}
+
+button {
+	border: none;
+	outline: none;
+	border-radius: 15px;
+	padding: 13px 37px;
+	min-width: 196px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-blue);
+	color: var(--white);
+}
+
+button.ghost {
+	background-color: transparent;
+	border: 1px solid var(--main-blue);
+	color: var(--white);
+}

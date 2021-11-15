@@ -5,8 +5,42 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link rel="stylesheet" href="./styles/homepage.css" />
 	</head>
 	<body>
-		<h1>Mobile first</h1>
+		<header class="container">
+			<nav class="nav">
+				<picture>
+					<source media="(min-width: 750px)" srcset="./images/logo@2x.png" />
+					<img src="./images/logo.png" alt="Logo of the Natteravnen bar" />
+				</picture>
+				<img src="./icons/hamburger.svg" alt="Hamburger icon" />
+			</nav>
+			<section class="header-content">
+				<h2>Take control over the music played in the bar.</h2>
+				<button>Create an account</button>
+				<button class="ghost">Log in</button>
+				<img
+					class="chevron-icon"
+					src="./icons/chevron.svg"
+					alt="Down arrow icon"
+				/>
+			</section>
+		</header>
+		<main>
+			<h1>Hear your favourite song in the bar</h1>
+			<input type="text" placeholder="Title of your desired song..." />
+			<button class="input-submit-btn">
+				<img src="./icons/send.svg" alt="Send icon" />
+			</button>
+		</main>
 	</body>
 </html>
