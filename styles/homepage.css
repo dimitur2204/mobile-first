@@ -127,7 +127,8 @@ p.number-of-likes {
 /* Current song sticky styles */
 .current-song {
 	position: sticky;
-	backdrop-filter: blur(30px) brightness(12) opacity(0.3);
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(15px);
 	left: 0;
 	bottom: 0;
 	border-bottom-left-radius: 0;
