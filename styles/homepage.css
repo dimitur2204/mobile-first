@@ -81,6 +81,57 @@ nav {
 }
 
 /* Next songs styles */
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.search h3 {
+	margin-bottom: 0;
+}
+
+.search-song-form {
+	margin-left: 8px;
+	height: 28px;
+	max-width: 144px;
+	padding: 0 10px;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	border: none;
+	outline: none;
+	color: var(--white);
+	border-radius: 15px;
+	background-color: transparent;
+	border: 1px solid var(--white);
+}
+.search-song-form input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: var(--white);
+	width: 100%;
+}
+.search-song-form input::placeholder {
+	color: var(--white);
+	font-size: 10px;
+}
+.search-song-btn {
+	min-width: initial;
+	padding: 0;
+	background: none;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	height: 260px;
+	overflow-y: scroll;
+}
 .next-song-card {
 	display: flex;
 	justify-content: space-between;

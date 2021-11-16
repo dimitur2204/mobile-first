@@ -31,7 +31,7 @@ h3 {
 	margin-bottom: 16px;
 }
 
-main > section {
+main > section:not(:last-child) {
 	margin-bottom: 45px;
 }
 
