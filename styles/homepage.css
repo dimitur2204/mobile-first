@@ -46,6 +46,7 @@ nav {
 	padding-left: 14px;
 	background-color: transparent;
 	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
+	-webkit-backdrop-filter: blur(11px) brightness(12) opacity(0.3);
 }
 
 .song-form input {
@@ -180,6 +181,7 @@ p.number-of-likes {
 	position: sticky;
 	background-color: rgba(255, 255, 255, 0.4);
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	left: 0;
 	bottom: 0;
 	border-bottom-left-radius: 0;

@@ -1,9 +1,15 @@
 :root {
 	--main-blue: #4b25cc;
+	--desktop-background: #10072e;
 	--dark-blue: #27125f;
 	--main-red: #a70e6a;
+	--main-pink: #cc2489;
 	--white: #fff;
 	--border-radius: 15px;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +70,7 @@ p.small {
 	background-color: transparent;
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(11px) brightness(12) opacity(0.3);
+	-webkit-backdrop-filter: blur(11px) brightness(12) opacity(0.3);
 	padding: 14px 20px;
 }
 
@@ -100,4 +107,20 @@ button.ghost {
 	background-color: transparent;
 	border: 1px solid var(--main-blue);
 	color: var(--white);
+}
+
+button.pink {
+	background-color: var(--main-blue);
+}
+
+@media only screen and (min-width: 750px) {
+	body {
+		background: var(--desktop-background);
+	}
+	.container {
+		padding: 60px 125px;
+	}
+	h1 {
+		font-size: 65px;
+	}
 }
