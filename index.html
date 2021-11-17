@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/base.css" />
 		<link rel="stylesheet" href="./styles/homepage.css" />
+		<link rel="stylesheet" href="./styles/homepage-desktop.css" />
 	</head>
 	<body>
 		<header class="container">
@@ -23,21 +24,62 @@
 					<source media="(min-width: 750px)" srcset="./images/logo@2x.png" />
 					<img src="./images/logo.png" alt="Logo of the Natteravnen bar" />
 				</picture>
-				<img src="./icons/hamburger.svg" alt="Hamburger icon" />
+				<img class="mobile" src="./icons/hamburger.svg" alt="Hamburger icon" />
+				<section class="desktop desktop-nav">
+					<a href="">About us</a>
+					<a href="">Events</a>
+					<a href="">Gallery</a>
+					<button class="pink nav-btn">Sign Up</button>
+					<button class="ghost pink nav-btn">Log in</button>
+				</section>
 			</nav>
-			<section class="header-content">
+			<section class="header-content mobile">
 				<h1>Take control over the music played in the bar.</h1>
-				<button>Create an account</button>
+				<button class="">Create an account</button>
 				<button class="ghost">Log in</button>
-				<a href="#next-song-section">
+				<a class="" href="#next-song-section">
 					<img
 						class="chevron-icon"
 						src="./icons/chevron.svg"
 						alt="Down arrow icon"
 				/></a>
 			</section>
+			<section class="header-content desktop">
+				<h1 class="desktop-headline">See you in the bar in</h1>
+				<section class="time-until">
+					<section class="time-pair">
+						<span class="number">02</span>
+						<span class="text">Days</span>
+					</section>
+					<section class="time-pair">
+						<span class="number">23</span>
+						<span class="text">Hours</span>
+					</section>
+					<section class="time-pair">
+						<span class="number">45</span>
+						<span class="text">Minutes</span>
+					</section>
+					<section class="time-pair">
+						<span class="number">30</span>
+						<span class="text">Seconds</span>
+					</section>
+				</section>
+				<section class="links">
+					<button class="nav-btn">Download app</button>
+					<a class="" href="#events-section">
+						<img
+							class="chevron-icon"
+							src="./icons/chevron.svg"
+							alt="Down arrow icon"
+					/></a>
+					<section class="social-media">
+						<img src="./icons/instagram.svg" alt="Instagram icon" />
+						<img src="./icons/facebook.svg" alt="Facebook icon" />
+					</section>
+				</section>
+			</section>
 		</header>
-		<main class="container">
+		<main class="container mobile">
 			<section class="play-a-song">
 				<h1>Hear your favourite song in the bar</h1>
 				<form class="song-form" action="">
@@ -71,7 +113,56 @@
 				<section class="cards"></section>
 			</section>
 		</main>
-		<section class="card current-song">
+		<main class="container desktop">
+			<section id="events-section" class="events">
+				<h3 class="subheading">Events</h3>
+				<h1 class="events-heading">Upcoming events</h1>
+				<section class="content">
+					<section class="featured-event">
+						<section class="event-info">
+							<h3 class="date">13.11.2021</h3>
+							<h2 class="title">Bond night</h2>
+							<h3 class="time">Event starts in 22:00</h3>
+							<section class="actions">
+								<img src="./icons/share.svg" alt="Share icon" />
+								<button>View details</button>
+							</section>
+						</section>
+					</section>
+					<section class="secondary-events">
+						<section class="event">
+							<img src="./images/karaoke.png" alt="Karaoke night picture" />
+							<section class="event-info">
+								<section class="text">
+									<h3 class="date">18.11.2021</h3>
+									<h2 class="title">Karaoke night</h2>
+									<h3 class="time">Event starts in 22:00</h3>
+								</section>
+								<section class="actions">
+									<img src="./icons/share.svg" alt="Share icon" />
+									<button>View details</button>
+								</section>
+							</section>
+						</section>
+						<section class="event reverse">
+							<img src="./images/lottery.png" alt="Lottery night picture" />
+							<section class="event-info">
+								<div class="text">
+									<h3 class="date">20.11.2021</h3>
+									<h2 class="title">Lottery night</h2>
+									<h3 class="time">Event starts in 22:00</h3>
+								</div>
+								<section class="actions">
+									<img src="./icons/share.svg" alt="Share icon" />
+									<button>View details</button>
+								</section>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</main>
+		<section class="mobile card current-song">
 			<h2>Playing in the bar now...</h2>
 			<section class="card-info">
 				<picture>

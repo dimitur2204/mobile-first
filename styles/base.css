@@ -19,6 +19,13 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+body,
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
 .container {
 	padding: 28px;
 }
@@ -90,6 +97,11 @@ p.small {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: var(--white);
+}
+
 button {
 	border: none;
 	outline: none;
@@ -110,10 +122,25 @@ button.ghost {
 }
 
 button.pink {
-	background-color: var(--main-blue);
+	background-color: var(--main-pink);
+}
+
+button.ghost.pink {
+	background-color: transparent;
+	border: 1px solid var(--main-pink);
+	color: var(--white);
+}
+
+@media only screen and (max-width: 750px) {
+	.desktop {
+		display: none !important;
+	}
 }
 
 @media only screen and (min-width: 750px) {
+	.mobile {
+		display: none !important;
+	}
 	body {
 		background: var(--desktop-background);
 	}
@@ -122,5 +149,8 @@ button.pink {
 	}
 	h1 {
 		font-size: 65px;
+	}
+	a {
+		font-size: 23px;
 	}
 }
