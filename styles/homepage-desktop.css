@@ -12,6 +12,9 @@
 		overflow-x: hidden;
 		overflow-y: hidden;
 	}
+	.header-content {
+		margin: 0 auto;
+	}
 	.desktop-nav {
 		display: flex;
 		align-items: center;

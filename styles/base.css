@@ -104,6 +104,27 @@ p.small {
 a {
 	text-decoration: none;
 	color: var(--white);
+	position: relative;
+}
+a.no-hover::after {
+	content: none;
+}
+a:hover:after {
+	width: 100%;
+}
+a:after {
+	width: 0%;
+	height: 1px;
+	background-color: var(--white);
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
 button {
@@ -117,8 +138,10 @@ button {
 	align-items: center;
 	background-color: var(--main-blue);
 	color: var(--white);
+	cursor: pointer;
+	transition: background-color 0.3s;
+	border: 1px solid transparent;
 }
-
 button.ghost {
 	background-color: transparent;
 	border: 1px solid var(--main-blue);
@@ -131,6 +154,28 @@ button.pink {
 
 button.ghost.pink {
 	background-color: transparent;
+	border: 1px solid var(--main-pink);
+	color: var(--white);
+}
+
+button:hover {
+	background-color: transparent;
+	border: 1px solid var(--main-blue);
+}
+button.ghost:hover {
+	background-color: var(--main-blue);
+	border: 1px solid var(--main-blue);
+	color: var(--white);
+}
+
+button.pink:hover {
+	background-color: var(--main-pink);
+	background-color: transparent;
+	border: 1px solid var(--main-pink);
+}
+
+button.ghost.pink:hover {
+	background-color: var(--main-pink);
 	border: 1px solid var(--main-pink);
 	color: var(--white);
 }
