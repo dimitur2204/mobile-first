@@ -1,24 +1,28 @@
 (() => {
 	const initialCards = [
 		{
-			title: 'Semaphore',
-			author: 'Requin Chagrin',
-			requestor: 'John Doe',
+			title: "Semaphore",
+			author: "Requin Chagrin",
+			requestor: "John Doe",
+			likes: 20,
 		},
 		{
-			title: 'S&M',
-			author: 'Rihanna',
-			requestor: 'John Doe',
+			title: "S&M",
+			author: "Rihanna",
+			requestor: "John Doe",
+			likes: 4,
 		},
 		{
-			title: 'BUTTERFLY EFFECT',
-			author: 'Travis Scott',
-			requestor: 'John Doe',
+			title: "BUTTERFLY EFFECT",
+			author: "Travis Scott",
+			requestor: "John Doe",
+			likes: 25,
 		},
 		{
-			title: 'Semaphore',
-			author: 'Requin Chagrin',
-			requestor: 'John Doe',
+			title: "Semaphore",
+			author: "Requin Chagrin",
+			requestor: "John Doe",
+			likes: 22,
 		},
 	];
 	let cardsToRender = [...initialCards];
@@ -44,19 +48,23 @@
 </section>
 <section class="likes">
     <img src="./icons/heart.svg" alt="Heart icon" />
-    <p class="number-of-likes">10</p>
+    <p class="number-of-likes">${cardInfo.likes}</p>
 </section>
 </section>`;
 	};
 	const render = () => {
-		const cardsParent = document.querySelector('.cards');
-		cardsParent.innerHTML = '';
-		cardsToRender.forEach((c) => {
-			cardsParent.innerHTML += cardToRender(c);
-		});
+		const cardsParent = document.querySelector(".cards");
+		cardsParent.innerHTML = "";
+		cardsToRender
+			.sort((a, b) => {
+				return b.likes - a.likes;
+			})
+			.forEach((c) => {
+				cardsParent.innerHTML += cardToRender(c);
+			});
 	};
-	const searchSongInput = document.querySelector('.search-song-input');
-	searchSongInput.addEventListener('input', (e) => {
+	const searchSongInput = document.querySelector(".search-song-input");
+	searchSongInput.addEventListener("input", (e) => {
 		const searchValue = e.target.value;
 		cardsToRender = initialCards.filter((c) => {
 			return (

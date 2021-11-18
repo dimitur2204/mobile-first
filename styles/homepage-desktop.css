@@ -186,4 +186,57 @@
 	.free-drinks-content button {
 		max-width: 213px;
 	}
+	.dj-of-month {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.dj-of-month h3 {
+		margin-bottom: 30px;
+		font-size: 35px;
+	}
+	.dj-of-month h1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 60px;
+	}
+	.dj-of-month dfn {
+		max-width: 760px;
+	}
+	.dj-of-month .line {
+		width: 82px;
+		height: 1px;
+		background-color: var(--white);
+		margin-bottom: 30px;
+	}
+	.dj-of-month .content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 760px;
+		margin-bottom: 30px;
+	}
+	.dj-of-month .info {
+		display: flex;
+		flex-direction: column;
+		margin-right: 80px;
+	}
+	.dj-of-month .info .first {
+		font-size: 20px;
+		margin-bottom: 20px;
+		font-weight: lighter;
+	}
+	.dj-of-month .info .second {
+		font-size: 25px;
+	}
+	.dj-of-month .photo-with-crown {
+		position: relative;
+	}
+	.dj-of-month .crown-icon {
+		position: absolute;
+		top: -10%;
+		left: -15%;
+	}
 }
