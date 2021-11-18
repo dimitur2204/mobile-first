@@ -153,4 +153,7 @@ button.ghost.pink {
 	a {
 		font-size: 23px;
 	}
+	main > section:not(:last-child) {
+		margin-bottom: 125px;
+	}
 }

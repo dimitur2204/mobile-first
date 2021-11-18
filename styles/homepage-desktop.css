@@ -1,4 +1,5 @@
 @media only screen and (min-width: 750px) {
+	/* Header styles */
 	header {
 		background: linear-gradient(
 				90deg,
@@ -63,6 +64,7 @@
 	.social-media img:last-child {
 		margin-left: 15px;
 	}
+	/* Events desktop styles */
 	.events {
 		display: flex;
 		flex-direction: column;
@@ -153,6 +155,8 @@
 	.actions > *:last-child {
 		margin-left: 30px;
 	}
+
+	/* Free drinks desktop styles */
 	.free-drinks {
 		display: flex;
 		border-radius: var(--border-radius);
@@ -186,6 +190,8 @@
 	.free-drinks-content button {
 		max-width: 213px;
 	}
+
+	/* DJ of the month desktop styles */
 	.dj-of-month {
 		display: flex;
 		flex-direction: column;
@@ -238,5 +244,27 @@
 		position: absolute;
 		top: -10%;
 		left: -15%;
+	}
+	/* Download app section */
+	.download-app {
+		position: relative;
+		z-index: 1;
+		height: 540px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		display: flex;
+		align-items: flex-end;
+	}
+	.download-app .background {
+		transform: scale(1.5);
+		height: 549px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+	}
+	.download-app .content {
+		z-index: 1;
 	}
 }
